@@ -86,8 +86,11 @@ Every required test ID is present and visible in the DOM:
 ```
 hng14-stage-0/
 ├── index.html    # Main HTML — semantic card structure
-├── style.css     # Styles — dark theme, responsive layout, animations
-├── script.js     # Logic — time calc, checkbox toggle, button handlers
+├── style.css     # CSS entry point importing modular stylesheets
+├── scripts/
+│   ├── core.js   # DOM queries, state initialization, shared helpers
+│   ├── render.js # UI rendering and timer lifecycle
+│   └── app.js    # Event handlers and app bootstrap
 └── README.md     # This file
 ```
 

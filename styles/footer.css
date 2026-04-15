@@ -1,0 +1,83 @@
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid var(--border-card);
+  padding-top: var(--spacing-md);
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.date-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.due-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.icon-clock {
+  color: var(--text-muted);
+}
+
+.time-remaining {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--warning);
+}
+
+.overdue-indicator {
+  align-self: flex-start;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: var(--danger-bg);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: var(--danger);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.todo-card.is-overdue .overdue-indicator {
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.18);
+}
+
+.card-controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.status-control-group {
+  display: flex;
+  align-items: center;
+}
+
+.status-control {
+  min-height: 42px;
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.72);
+  color: var(--text-main);
+  font: inherit;
+  padding: 0.65rem 2.25rem 0.65rem 0.85rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.status-control:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-light);
+}

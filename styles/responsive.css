@@ -1,0 +1,25 @@
+@media (max-width: 480px) {
+  .page-container {
+    border-radius: 10px;
+    padding: 8px;
+    align-items: stretch;
+  }
+
+  .todo-card {
+    max-width: 100%;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    justify-content: center;
+  }
+
+  .todo-edit-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .card-controls,
+  .status-control-group,
+  .status-control {
+    width: 100%;
+  }
+}

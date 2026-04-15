@@ -1,0 +1,135 @@
+.todo-edit {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.todo-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.todo-edit-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.todo-edit-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.todo-edit-copy {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+}
+
+.todo-edit-fields {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.todo-edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.todo-edit-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.todo-edit-input,
+.todo-edit-textarea,
+.todo-edit-select {
+  width: 100%;
+  border: 1px solid var(--border-card);
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.72);
+  color: var(--text-main);
+  font: inherit;
+  padding: 0.85rem 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.todo-edit-input,
+.todo-edit-select {
+  min-height: 48px;
+}
+
+.todo-edit-textarea {
+  min-height: 132px;
+  resize: vertical;
+}
+
+.todo-edit-input::placeholder,
+.todo-edit-textarea::placeholder {
+  color: var(--text-muted);
+  font-size: 2px;
+}
+
+.todo-edit-input:focus-visible,
+.todo-edit-textarea:focus-visible,
+.todo-edit-select:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-light);
+}
+
+.todo-edit-grid {
+  display: grid;
+  gap: var(--spacing-md);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.todo-edit-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.todo-edit-button {
+  min-height: 46px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.todo-edit-button:hover {
+  transform: translateY(-1px);
+}
+
+.todo-edit-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-light);
+}
+
+.todo-edit-button-save {
+  background: var(--accent);
+  color: var(--text-main);
+}
+
+.todo-edit-button-save:hover,
+.todo-edit-button-save:focus-visible {
+  background: var(--accent-hover);
+}
+
+.todo-edit-button-cancel {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-main);
+  border-color: var(--border-card);
+}
+
+.todo-edit-button-cancel:hover,
+.todo-edit-button-cancel:focus-visible {
+  background: rgba(255, 255, 255, 0.08);
+}
